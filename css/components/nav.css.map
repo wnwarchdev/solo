@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "nav.css",
+	"sources": [
+		"../../sass/components/nav.scss"
+	],
+	"names": [],
+	"mappings": ""
+}

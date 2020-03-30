@@ -1,0 +1,16 @@
+@import "variables";
+
+body {
+    color: $glyph-main;
+    font-family: $font;
+}
+
+
+.bold {
+  font-weight: $font-bold;
+}
+
+a {
+  text-decoration: none;
+  color: $glyph-click;
+}

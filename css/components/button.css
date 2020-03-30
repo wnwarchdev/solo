@@ -1,0 +1,55 @@
+/* Colors */
+/* fonts and icons */
+/* color highlights */
+/* color backgrounds */
+/* Fonts */
+/* Font sizes */
+/* Fonts family*/
+.btn {
+  display: block;
+  border: none;
+  height: 40px;
+  padding: 0 12px;
+  border-radius: 5px;
+  background-color: #f58220;
+  color: #ffffff;
+  font-family: 300;
+  transition: .2s ease-in-out;
+}
+
+.btn i {
+  color: #ffffff;
+}
+
+.btn:hover {
+  background-color: #04ae00;
+}
+
+.secondary {
+  background-color: #a6a6a6;
+  margin: 0 10px;
+  padding-left: 35px;
+}
+
+.drop {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  background-color: #fff;
+  border-bottom: 0;
+  border-top: 0;
+  border-right: 0;
+  border-left: 1px solid #e3e3e3;
+  color: #a6a6a6;
+  font-family: 500;
+  font-size: 18px;
+  transition: .2s ease-in-out;
+}
+
+.drop:hover {
+  color: #04ae00;
+}
+
+/*# sourceMappingURL=button.css.map */
