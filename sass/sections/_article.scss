@@ -30,7 +30,7 @@ main {
 
 .article-centered {
   display: flex;
-    justify-content: center;
+  justify-content: center;
 }
 
 .article-column {
@@ -66,11 +66,17 @@ main {
 
 .container-value {
   display: flex;
-  width:300px;
-  margin: 0 40px;
-  justify-content: space-between;
+  min-width: 150px;
+  width: 100%;
+  max-width:250px;
+  justify-content: space-between; //768px
   border-bottom: 1px solid $background-border;
   height:35px;
+}
+
+.article-wrap {
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 

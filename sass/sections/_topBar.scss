@@ -41,9 +41,6 @@
 }
 
 
-
-
-
 .font-regular {
   font-weight: $font-regular;
 }
@@ -54,4 +51,10 @@
 
 .font-light {
   font-weight: $font-light;
+}
+
+@media(max-width: 767px) {
+  .main-topbar {
+    display: none;
+  }
 }

@@ -432,7 +432,10 @@ nav img,
 .nav-navpanel-list-item {
   height: 40px;
   width: 100%;
-  line-height: 40px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 .nav-navpanel-list-item:hover {
@@ -444,20 +447,22 @@ nav img,
   color: #ffffff;
 }
 
-.nav-navpanel-manager {
+.nav-navpanel-border {
   border-top: 1px solid #a6a6a6;
-  padding-top: 25px;
-  margin-top: 25px;
+  padding-top: 15px;
 }
 
 .nav-navpanel-manager-avatar {
-  margin-top: 10px;
   position: relative;
 }
 
 .nav-navpanel-manager-avatar a {
   font-size: 14px;
   color: #56819f;
+}
+
+.nav-navpanel-manager-avatar:hover {
+  background-image: linear-gradient(90deg, #04ae00 0%, #04ae00 3%, #282828 3%, #282828 100%);
 }
 
 .indi-dot {
@@ -468,6 +473,47 @@ nav img,
   left: 50px;
   background-color: #04ae00;
   position: absolute;
+}
+
+@media (min-width: 768px) {
+  .md-hide {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  nav {
+    width: 50px;
+  }
+  nav ul li a,
+  .nav-navbar-container img {
+    display: none;
+  }
+  .hamburger {
+    margin: 0 auto;
+  }
+  .nav-navpanel-list-item i {
+    margin: 0 15px;
+    text-align: center;
+  }
+  .nav-navpanel-list-item:hover {
+    background-image: linear-gradient(90deg, #f58220 0%, #f58220 10%, #282828 10%, #282828 100%);
+  }
+  .nav-navpanel-manager-avatar:hover {
+    background-image: none;
+    background-color: #282828;
+  }
+  .nav-navpanel-manager p,
+  .name-link {
+    display: none;
+  }
+  .nav-navpanel-manager-avatar img {
+    margin: 0 auto;
+    height: 35px;
+  }
+  .indi-dot {
+    left: 30px;
+  }
 }
 
 /* Colors */
@@ -532,6 +578,12 @@ nav img,
 
 .font-light {
   font-weight: 300;
+}
+
+@media (max-width: 767px) {
+  .main-topbar {
+    display: none;
+  }
 }
 
 /* Colors */
@@ -610,12 +662,20 @@ main {
 .container-value {
   display: -ms-flexbox;
   display: flex;
-  width: 300px;
-  margin: 0 40px;
+  min-width: 150px;
+  width: 100%;
+  max-width: 250px;
   -ms-flex-pack: justify;
       justify-content: space-between;
   border-bottom: 1px solid #e3e3e3;
   height: 35px;
+}
+
+.article-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
 }
 
 .container-links {
