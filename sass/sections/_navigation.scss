@@ -1,103 +1,8 @@
 
 @import "../variables";
+@import "navigation_core";
 
-
-nav {
-  width: 188px;
-  background-color: $background-nav;
-  height: 100vh;
-  color: $glyph-highlight;
-  z-index: 500;
-  position: fixed;
-}
-
-
-.hamburger-bar {
-  width: 25px;
-  height: 3px;
-  background-color: $glyph-main;
-  margin: 5px;
-}
-
-
-nav ul {
-  list-style-type: none;
-}
-
-nav a,
-nav i,
-nav p {
-  color: $glyph-main;
-  text-decoration: none;
-}
-
-
-
-nav i,
-nav p,
-nav img,
-.hamburger {
-  margin: 0 18px;
-}
-
-.nav-navbar-container,
-.nav-navpanel-manager-avatar {
-  display: flex;
-  align-items: center;
-  height: 60px;
-}
-
-
-.uppercase {
-  text-transform: uppercase;
-}
-
-.nav-navpanel-list {
-  padding: 0;
-}
-
-.nav-navpanel-list-item {
-  height: 40px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-
-  &:hover {
-    background-image: linear-gradient(90deg, $component-attention 0%, $component-attention 3%, $component-nav-highlight 3%, $component-nav-highlight 100%);
-    i,
-    a {
-      color: $glyph-highlight;
-    }
-  }
-}
-
-.nav-navpanel-border {
-  border-top: 1px solid $background-nav-border;
-  padding-top: 15px;
-}
-
-.nav-navpanel-manager-avatar {
-  position: relative;
-
-  a {
-    font-size: $font-size-min1;
-    color: $glyph-click;
-  }
-
-  &:hover {
-    background-image: linear-gradient(90deg, $component-active 0%, $component-active 3%, $component-nav-highlight 3%, $component-nav-highlight 100%);
-  }
-}
-
-.indi-dot {
-  width: 12px;
-  height: 12px;
-  border-radius:50%;
-  top:10px;
-  left: 50px;
-  background-color: $component-active;
-  position: absolute;
-}
+//for screen code look at navigation_override.scss
 
 
 @media(min-width: 768px) {
@@ -110,11 +15,10 @@ nav img,
 
 @media(max-width: 767px) {
   nav {
-    //background: orange;
     width: 50px;
   }
 
-  nav ul li a,
+  .nav-navpanel-list-item a,
   .nav-navbar-container img {
     display: none;
   }
@@ -152,6 +56,54 @@ nav img,
     left:30px;
 
   }
+}
 
+
+.nav-expand {
+
+  width: 188px;
+
+
+  .nav-navpanel-list-item a {
+    display: inline;
+  }
+
+  .nav-navbar-container img {
+    display: block;
+  }
+
+  .hamburger {
+    margin: 0 15px;
+  }
+
+  .nav-navpanel-list-item i {
+    margin: 0 15px;
+    text-align: center;
+  }
+
+  .nav-navpanel-list-item:hover {
+      background-image: linear-gradient(90deg, $component-attention 0%, $component-attention 3%, $component-nav-highlight 3%, $component-nav-highlight 100%);
+  }
+
+  .nav-navpanel-manager-avatar:hover {
+    background-color: none;
+    background-image: linear-gradient(90deg, $component-active 0%, $component-active 3%, $component-nav-highlight 3%, $component-nav-highlight 100%);
+  }
+
+  .nav-navpanel-manager p,
+  .name-link {
+    display: inline-block;
+
+  }
+
+  .nav-navpanel-manager-avatar img {
+    margin: 0 18px;
+    height: 45px;
+  }
+
+  .indi-dot {
+    left: 50px;
+
+  }
 
 }
