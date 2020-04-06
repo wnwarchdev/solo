@@ -48,7 +48,11 @@ main {
     margin: 30px 0;
 }
 
-
+.container-fluid {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 .article h3 {
   font-size: $font-size-min1;
@@ -62,6 +66,15 @@ main {
 
 .container {
   display: flex;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .container-value {
@@ -118,6 +131,12 @@ main {
   }
 }
 
+.centered {
+  margin: 0 auto;
+}
+
+
+
 
 .date-container {
   border: 1px solid $background-border;
@@ -141,4 +160,106 @@ main {
       border-left: 2px solid $background-border;
     }
   }
+}
+
+table {
+  width: 680px;
+  border-collapse: collapse;
+
+  tr {
+    height: 35px;
+    border-top: 1px solid $background-border;
+
+    &:last-of-type {
+          border-bottom: 1px solid $background-border;
+    }
+
+    & > td:first-child {
+      font-weight: $font-bold;
+      width: 250px;
+    }
+
+    &:hover {
+      background: $background-page;
+
+      td i {
+        visibility: visible;
+
+        &:hover {
+          color:$glyph-action;
+        }
+
+      }
+    }
+
+    td i {
+      margin:10px;
+      visibility: hidden;
+
+    }
+  }
+}
+
+
+
+@media(max-width: 767px) {
+  main {
+    margin-left: 45px;
+    width: calc(100% - 45px);
+    margin-top: 0px;
+    padding-top: 1px;
+  }
+
+  .container-links {
+    flex-direction: column;
+    height:80px;
+  }
+
+  .article-shrink {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .canvas {
+    width: 400px;
+  }
+
+  .date-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    i {
+      display: none;
+    }
+  }
+
+  table {
+    width: 320px;
+    tr {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      height: 80px;
+      & > td:last-child {
+        height: 30px;
+        display: flex;
+        align-items: center;
+      }
+      &:hover td i {
+        visibility:hidden;
+      }
+      &:checked td i {
+        visibility: visible;
+      }
+      td {
+        text-align: center;
+        i {
+          font-size: $font-size-max2;
+          //visibility: visible; // co zamiast hovera?
+        }
+      }
+    }
+  }
+
 }

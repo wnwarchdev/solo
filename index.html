@@ -164,7 +164,7 @@
 
 
               <div class="container article-centered article-vmargin">
-                <div class="container article-shrink article-column">
+                <div class="container-fluid article-shrink article-column">
                   <div class="container">
                     <h4>Earnings chart</h4>
                   </div>
@@ -174,7 +174,9 @@
                     <button class="btn secondary">Earned</button>
                   </div>
                   <div class="container">
-                    <img src="images/graph.png" alt="chart">
+                    <canvas id="myChart"></canvas>
+
+
                   </div>
 
                 </div>
@@ -197,7 +199,7 @@
                 <div class="container article-column">
 
                   <div class="article-shrink article-centered">
-                    <button class="btn article-vmargin">+ add new</button>
+                    <button class="btn article-vmargin testmodal">Test Modal</button>
                   </div>
 
                   <div class="article-shrink article-centered article-column">
@@ -238,7 +240,7 @@
                       </div>
                     </div>
 
-                    <div class="container-links article-centered">
+                    <div class="container-links">
                       <p class="links-line">Google</p>
                       <a href="#" class="links-line">http://www.google.com</a>
                       <div class="container links-icons">
@@ -247,7 +249,7 @@
                       </div>
                     </div>
 
-                    <div class="container-links article-centered">
+                    <div class="container-links">
                       <p class="links-line">Facebook</p>
                       <a href="#" class="links-line">http://www.facebook.com</a>
                       <div class="container links-icons">
@@ -256,7 +258,7 @@
                       </div>
                     </div>
 
-                    <div class="container-links article-centered">
+                    <div class="container-links">
                       <p class="links-line">Dashboard</p>
                       <a href="#" class="links-line">http://www.dboard.io</a>
                       <div class="container links-icons">
@@ -265,7 +267,7 @@
                       </div>
                     </div>
 
-                    <div class="container-links article-centered">
+                    <div class="container-links">
                       <p class="links-line">Blur Ax</p>
                       <a href="#" class="links-line">http://www.blur.ax</a>
                       <div class="container links-icons">
@@ -274,7 +276,7 @@
                       </div>
                     </div>
 
-                    <div class="container-links article-centered">
+                    <div class="container-links">
                       <p class="links-line">Piece Of Wine</p>
                       <a href="#" class="links-line">http://www.pieceofwine.com</a>
                       <div class="container links-icons">
@@ -283,7 +285,7 @@
                       </div>
                     </div>
 
-                    <div class="container-links article-centered">
+                    <div class="container-links">
                       <p class="links-line">Twitter</p>
                       <a href="#" class="links-line">http://www.twitter.com</a>
                       <div class="container links-icons">
@@ -386,22 +388,102 @@
             </div> <!-- end Article -->
 
 
+            <div class="article">
+
+              <div class="article-container">
+                <h3>Banners</h3>
+              </div>
+
+              <div class="article-container article-column">
+
+                <div class="row article-centered">
+                  <button class="btn article-vmargin">+ add new</button>
+                </div>
+
+                <table class="centered">
+
+                  <tr>
+                    <td><span>Banner main</span></td>
+                    <td><a href="#" class="links-line">http://www.website.com/main</a></td>
+                    <td>
+                      <input type="checkbox" name="showicons">
+                      <label for="showicons">Modify</label>
+                      <i class="icon-links"></i>
+                      <i class="icon-trash"></i>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><span>Sign-up banner</span></td>
+                    <td><a href="#" class="links-line">http://www.website.com/signup</a></td>
+                    <td>
+                      <i class="icon-links"></i>
+                      <i class="icon-trash"></i>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><span>Left side</span></td>
+                    <td><a href="#" class="links-line">http://www.website.com/left</a></td>
+                    <td>
+                      <i class="icon-links"></i>
+                      <i class="icon-trash"></i>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><span>Vertical</span></td>
+                    <td><a href="#" class="links-line">http://www.website.com/vertical</a></td>
+                    <td>
+                      <i class="icon-links"></i>
+                      <i class="icon-trash"></i>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><span>Front</span></td>
+                    <td><a href="#" class="links-line">http://www.website.com/front</a></td>
+                    <td>
+                      <i class="icon-links"></i>
+                      <i class="icon-trash"></i>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><span>Horizontal</span></td>
+                    <td><a href="#" class="links-line">http://www.website.com/horizontal</a></td>
+                    <td>
+                      <i class="icon-links"></i>
+                      <i class="icon-trash"></i>
+                    </td>
+                  </tr>
+
+                </table>
+
+                <div class="row article-centered">
+                  <button class="btn article-vmargin">+ add new</button>
+                </div>
 
 
 
 
+              </div>
+
+            </div> <!-- end Article -->
 
 
 
 
+            <div class="overlay" id="overlay">
+              <div class="modal" id="myModal">
+                <div class="btn-close js--close-modal">x</div>
 
+                <h4>Witaj w modalu!</h4>
+                <p>Lorem ipsum dolor sit amet...</p>
 
-
-
-
-
-
-
+                <button class="js--close-modal">Okay</button>
+              </div>
+            </div>
 
 
 
@@ -411,7 +493,7 @@
 
   </body>
 
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
   <script src="js/script.js"></script>
 
 
