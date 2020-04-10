@@ -4,7 +4,6 @@ body {
     font-family: $font;
 }
 
-
 .bold {
   font-weight: $font-bold;
 }
@@ -87,7 +86,6 @@ a {
   display: flex;
   flex-wrap: wrap;
 }
-
 
 
 @media(max-width: 767px) {
