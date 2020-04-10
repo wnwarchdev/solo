@@ -44,8 +44,6 @@ function openModal(modal) {
 }
 
 
-
-
 document.querySelector('.testmodal').addEventListener('click', function(e) {
   e.preventDefault();
   openModal('#myModal')
@@ -56,9 +54,10 @@ document.querySelector('.testmodal').addEventListener('click', function(e) {
 //Chart
 
 
-
 let ctx = document.getElementById('myChart').getContext('2d');
-
+Chart.Legend.prototype.afterFit = function() {
+    this.height = this.height + 30;
+};
 let chart = new Chart(ctx, {
     // 1
 
@@ -67,7 +66,7 @@ let chart = new Chart(ctx, {
     data: {
         // 2
 
-        labels: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"],
+        labels: ["01", "02", "03", "04", "05", "06", "07", "08", "09"],
 
         // 3
         datasets: [{
@@ -77,31 +76,47 @@ let chart = new Chart(ctx, {
             backgroundColor: '#8DBEC8',
             borderColor: '#8DBEC8',
             // 6
-            data: [ 52, 51, 41, 94, 26, 6, 72, 9, 21, 88 ],
+            data: [ 52, 51, 41, 94, 26, 6, 72, 9, 21],
         },
         {
             label: "FTD",
             backgroundColor: '#F29E4E',
             borderColor: '#F29E4E',
-            data: [ 6, 72, 1, 0, 47, 11, 50, 44, 63, 76 ],
+            data: [ 6, 72, 1, 0, 47, 11, 50, 44, 63 ],
         },
         {
             label: "Earned",
             backgroundColor: '#71B374',
             borderColor: '#71B374',
-            data: [ 59, 49, 68, 90, 67, 41, 13, 38, 48, 48 ],
+            data: [ 59, 49, 68, 90, 67, 41, 13, 38, 48 ],
             // 7
             hidden: true,
         }]
     },
     options: {
+      layout: {
+            padding: {
+                left: 3,
+                right: 1,
+            }
+        },
+        responsive: true,
+        maintainAspectRatio: false,
         legend: {
+
             display: true,
             position: 'top',
             labels: {
-                fontColor: 'red',
-                fillStyle: 'grey',
+                usePointStyle: true,
+                borderColor: 'black' ,
+                fontSize: 14,
+                padding: 15,
+                fontFamily: 'Roboto, serif',
             }
         }
     },
+
 });
+
+
+// title

@@ -16,34 +16,14 @@
   }
 
   &:hover {
-    background-color: $component-active;
+    opacity: .8;
   }
 }
 
 .secondary {
   background-color: $background-nav-border;
-  margin: 0 10px;
-  padding-left: 35px;
 }
 
-
-.drop {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-    background-color: #fff;
-    border-bottom: 0;
-    border-top: 0;
-    border-right: 0;
-    border-left: 1px solid $background-border;
-    color: $glyph-main;
-    font-family: $font-regular;
-    font-size: $font-size-max1;
-    transition: .2s ease-in-out;
-
-    &:hover {
-      color: $component-active;
-    }
-  }
+.danger {
+  background-color: $component-attention;
+}

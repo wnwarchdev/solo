@@ -20,57 +20,48 @@
 
         <img src="images/logo.png" alt="logo">
         <div class="hamburger">
+          <!--
           <div class="hamburger-bar"></div>
           <div class="hamburger-bar"></div>
           <div class="hamburger-bar"></div>
+        -->
         </div>
       </div>
 
       <div class="nav-navpanel">
          <ul class="nav-navpanel-list">
            <li class="nav-navpanel-list-item">
-             <i class="icon-general"></i>
-             <a href="#General">General</a>
+             <a href="#General"><i class="icon-general"></i><span>General</span></a>
            </li>
            <li class="nav-navpanel-list-item">
-             <i class="icon-details"></i>
-             <a href="#Details">Details</a>
+             <a href="#Details"><i class="icon-details"></i><span>Details</span></a>
            </li>
            <li class="nav-navpanel-list-item">
-             <i class="icon-links"></i>
-             <a href="#Links">Links</a>
+             <a href="#Links"><i class="icon-links"></i><span>Links</span></a>
            </li>
            <li class="nav-navpanel-list-item">
-             <i class="icon-banners"></i>
-             <a href="#Banners">Banners</a>
+             <a href="#Banners"><i class="icon-banners"></i><span>Banners</span></a>
            </li>
            <li class="nav-navpanel-list-item">
-             <i class="icon-personaldata"></i>
-             <a href="#Personal-data">Personal Data</a>
+             <a href="#Personal-data"><i class="icon-personaldata"></i><span>Personal Data</span></a>
            </li>
            <li class="nav-navpanel-list-item">
-             <i class="icon-payout"></i>
-             <a href="#Payout">Payout</a>
+             <a href="#Payout"><i class="icon-payout"></i><span>Payout</span></a>
            </li>
            <li class="nav-navpanel-list-item">
-             <i class="icon-postback"></i>
-             <a href="#Postback">Postback</a>
+             <a href="#Postback"><i class="icon-postback"></i><span>Postback</span></a>
            </li>
-           <li class="nav-navpanel-list-item md-hide">
-             <i class="icon-wallet"></i>
-             <a href="#Postback">Funds</a>
+           <li class="nav-navpanel-list-item nav-hide">
+             <a href="#Postback"><i class="icon-wallet"></i><span>Funds</span></a>
            </li>
-           <li class="nav-navpanel-list-item md-hide">
-             <i class="icon-notification"></i>
-             <a href="#Postback">Notifications</a>
+           <li class="nav-navpanel-list-item nav-hide">
+             <a href="#Postback"><i class="icon-notification"></i><span>Notifications</span></a>
            </li>
-           <li class="nav-navpanel-list-item md-hide">
-             <i class="icon-quit"></i>
-             <a href="#Postback">Exit</a>
+           <li class="nav-navpanel-list-item nav-hide">
+             <a href="#Postback"><i class="icon-quit"></i><span>Exit</span></a>
            </li>
-           <li class="nav-navpanel-list-item md-hide">
-             <i class="icon-profile"></i>
-             <a href="#" class="name-link">Leonardo DiCaprio</a>
+           <li class="nav-navpanel-list-item nav-hide">
+             <a href="#" class="name-link"><i class="icon-profile"></i><span>Leonardo DiCaprio</span></a>
            </li>
          </ul>
       </div>
@@ -92,7 +83,7 @@
       <div class="main-topbar">
         <div class="dropdown drop-large">
           <i class="icon-wallet"></i>
-          <p class="font-bold">1500,00</p>
+          <p class="bold">1500,00</p>
           <i class="icon-arrow-down"></i>
         </div>
 
@@ -112,75 +103,82 @@
       </div>
 
     <main>
-            <div class="article">
+            <div class="article active" id="General" >
 
               <div class="article-container">
                 <h3>General Statistic</h3>
               </div>
 
-              <div class="article-container article-centered article-vmargin">
-                <div class="container">
+              <div class="article-container d-flex v-margin30 article-centered pad-bottom30">
 
-                  <div class="date-container">
-                    <input type="date">
-                    <input type="date">
-                    <i class="icon-calendar"></i>
-                  </div>
 
-                  <button class="btn"><i class="icon-refresh"></i></button>
 
+
+                <div class="date-container">
+                  <input type="date">
+                  <input type="date">
+                  <i class="icon-calendar"></i>
                 </div>
+
+                <button class="btn blowup"><i class="icon-refresh"></i></button>
+
 
 
               </div>
 
 
 
-              <div class="container article-centered article-vmargin">
 
-                <div class="container article-shrink article-wrap article-centered">
-                  <div class="container-value">
-                    <p class="bold">Visit Signups</p> <!--4 elementy -->
-                    <p>12345</p>
+                  <div class="article-container mar-hor20 article-centered article-column">
+
+
+
+                    <div class="d-flex article-wrap v-margin30 mwidth-700 flex-spacearound">
+
+                      <div class="container-value  col-sm-5 col-lg-5  xs-center">
+                        <p class="bold">Visit Signups</p>
+                        <p>12345</p>
+                      </div>
+                      <div class="container-value col-sm-5 col-lg-5 xs-center">
+                        <p class="bold">FTD</p>
+                        <p>22345</p>
+                      </div>
+
+                      <div class="container-value col-sm-5 col-lg-5 xs-center">
+                        <p class="bold">Net deposit</p>
+                        <p>32345</p>
+                      </div>
+                      <div class="container-value col-sm-5 col-lg-5 xs-center">
+                        <p class="bold">Turnover</p>
+                        <p>42345</p>
+                      </div>
+
+                    </div>
+
+
+
+                    <div class="v-margin30 mwidth-700 flex-spacearound">
+                      <span class="bold mar-left15">  Earnings chart</span>
+
+                    </div>
+
+
+                    <!--
+                    <div class="row ">
+                      <button class="btn secondary">Signups</button>
+                      <button class="btn secondary">FTD</button>
+                      <button class="btn secondary">Earned</button>
+                    </div>
+                  -->
+
+                  <div class="mwidth-700 chart_height">
+                    <canvas class="" id="myChart"></canvas>
                   </div>
-                  <div class="container-value">
-                    <p class="bold">FTD</p>
-                    <p>22345</p>
-                  </div>
-
-                  <div class="container-value">
-                    <p class="bold">Net deposit</p>
-                    <p>32345</p>
-                  </div>
-                  <div class="container-value">
-                    <p class="bold">Turnover</p>
-                    <p>42345</p>
-                  </div>
-                </div>
-
-
-              </div>
-
-
-
-              <div class="container article-centered article-vmargin">
-                <div class="container-fluid article-shrink article-column">
-                  <div class="container">
-                    <h4>Earnings chart</h4>
-                  </div>
-                  <div class="container article-centered article-vmargin">
-                    <button class="btn secondary">Signups</button>
-                    <button class="btn secondary">FTD</button>
-                    <button class="btn secondary">Earned</button>
-                  </div>
-                  <div class="container">
-                    <canvas id="myChart"></canvas>
 
 
                   </div>
 
-                </div>
-              </div>
+
 
 
 
@@ -188,207 +186,126 @@
             </div>
 
 
-            <div class="article">
+            <div class="article active" id="Links">
 
               <div class="article-container">
                 <h3>Links</h3>
               </div>
 
-              <div class="article-container article-centered article-vmargin">
+              <div class="article-container article-column">
 
-                <div class="container article-column">
-
-                  <div class="article-shrink article-centered">
-                    <button class="btn article-vmargin testmodal">Test Modal</button>
+                  <div class="row article-centered">
+                    <button class="btn article-vmargin testmodal">testmodal</button>
                   </div>
 
-                  <div class="article-shrink article-centered article-column">
+                  <div class="row article-centered">
+                    <table class="mwidth-700 mar-hor20">
+                      <tbody class="">
+                      <tr>
+                        <td><span>Home page</span></td>
+                        <td><a href="#" class="links-line">http://www.homepage.com</a></td>
+                        <td>
+                          <i class="icon-links"></i>
+                          <i class="icon-trash"></i>
+                        </td>
+                      </tr>
 
-                    <div class="container-links">
-                      <p class="links-line">Home page</p>
-                      <a href="#" class="links-line">http://www.homepage.com</a>
-                      <div class="container links-icons">
-                        <i class="icon-links"></i>
-                        <i class="icon-trash"></i>
-                      </div>
-                    </div>
+                      <tr>
+                        <td><span>Currently offer</span></td>
+                        <td><a href="#" class="links-line">http://www.currently.com</a></td>
+                        <td>
+                          <i class="icon-links"></i>
+                          <i class="icon-trash"></i>
+                        </td>
+                      </tr>
 
-                    <div class="container-links">
-                      <p class="links-line">Currently offer</p>
-                      <a href="#" class="links-line">http://www.currently.com</a>
-                      <div class="container links-icons">
-                        <i class="icon-links"></i>
-                        <i class="icon-trash"></i>
-                      </div>
-                    </div>
+                      <tr>
+                        <td><span>Blurpix</span></td>
+                        <td><a href="#" class="links-line">http://www.blurpix.xyz</a></td>
+                        <td>
+                          <i class="icon-links"></i>
+                          <i class="icon-trash"></i>
+                        </td>
+                      </tr>
 
-                    <div class="container-links">
-                      <p class="links-line">Blurpix</p>
-                      <a href="#" class="links-line">http://www.blurpix.xyz</a>
-                      <div class="container links-icons">
-                        <i class="icon-links"></i>
-                        <i class="icon-trash"></i>
-                      </div>
-                    </div>
+                      <tr>
+                        <td><span>Your site</span></td>
+                        <td><a href="#" class="links-line">http://www.yoursite.org</a></td>
+                        <td>
+                          <i class="icon-links"></i>
+                          <i class="icon-trash"></i>
+                        </td>
+                      </tr>
 
-                    <div class="container-links">
-                      <p class="links-line">Your site</p>
-                      <a href="#" class="links-line">http://www.yoursite.org</a>
-                      <div class="container links-icons">
-                        <i class="icon-links"></i>
-                        <i class="icon-trash"></i>
-                      </div>
-                    </div>
+                      <tr>
+                        <td><span>Google</span></td>
+                        <td><a href="#" class="links-line">http://www.google.com</a></td>
+                        <td>
+                          <i class="icon-links"></i>
+                          <i class="icon-trash"></i>
+                        </td>
+                      </tr>
 
-                    <div class="container-links">
-                      <p class="links-line">Google</p>
-                      <a href="#" class="links-line">http://www.google.com</a>
-                      <div class="container links-icons">
-                        <i class="icon-links"></i>
-                        <i class="icon-trash"></i>
-                      </div>
-                    </div>
+                      <tr>
+                        <td><span>Facebook</span></td>
+                        <td><a href="#" class="links-line">http://www.facebook.com</a></td>
+                        <td>
+                          <i class="icon-links"></i>
+                          <i class="icon-trash"></i>
+                        </td>
+                      </tr>
 
-                    <div class="container-links">
-                      <p class="links-line">Facebook</p>
-                      <a href="#" class="links-line">http://www.facebook.com</a>
-                      <div class="container links-icons">
-                        <i class="icon-links"></i>
-                        <i class="icon-trash"></i>
-                      </div>
-                    </div>
+                      <tr>
+                        <td><span>Dashboard</span></td>
+                        <td><a href="#" class="links-line">http://www.dboard.io</a></td>
+                        <td>
+                          <i class="icon-links"></i>
+                          <i class="icon-trash"></i>
+                        </td>
+                      </tr>
 
-                    <div class="container-links">
-                      <p class="links-line">Dashboard</p>
-                      <a href="#" class="links-line">http://www.dboard.io</a>
-                      <div class="container links-icons">
-                        <i class="icon-links"></i>
-                        <i class="icon-trash"></i>
-                      </div>
-                    </div>
+                      <tr>
+                        <td><span>Blur Ax</span></td>
+                        <td><a href="#" class="links-line">http://www.blur.ax</a></td>
+                        <td>
+                          <i class="icon-links"></i>
+                          <i class="icon-trash"></i>
+                        </td>
+                      </tr>
 
-                    <div class="container-links">
-                      <p class="links-line">Blur Ax</p>
-                      <a href="#" class="links-line">http://www.blur.ax</a>
-                      <div class="container links-icons">
-                        <i class="icon-links"></i>
-                        <i class="icon-trash"></i>
-                      </div>
-                    </div>
+                      <tr>
+                        <td><span>Piece Of Wine</span></td>
+                        <td><a href="#" class="links-line">http://www.pieceofwine.com</a></td>
+                        <td>
+                          <i class="icon-links"></i>
+                          <i class="icon-trash"></i>
+                        </td>
+                      </tr>
 
-                    <div class="container-links">
-                      <p class="links-line">Piece Of Wine</p>
-                      <a href="#" class="links-line">http://www.pieceofwine.com</a>
-                      <div class="container links-icons">
-                        <i class="icon-links"></i>
-                        <i class="icon-trash"></i>
-                      </div>
-                    </div>
+                      <tr>
+                        <td><span>Twitter</span></td>
+                        <td><a href="#" class="links-line">http://www.twitter.com</a></td>
+                        <td>
+                          <i class="icon-links"></i>
+                          <i class="icon-trash"></i>
+                        </td>
+                      </tr>
 
-                    <div class="container-links">
-                      <p class="links-line">Twitter</p>
-                      <a href="#" class="links-line">http://www.twitter.com</a>
-                      <div class="container links-icons">
-                        <i class="icon-links"></i>
-                        <i class="icon-trash"></i>
-                      </div>
-                    </div>
 
+                    </tbody>
+                    </table>
                   </div>
 
-                </div>
+                  <div class="row article-centered">
+                    <button class="btn article-vmargin">+ add new</button>
+                  </div>
 
               </div>
 
             </div> <!-- end Article -->
 
 
-
-
-            <div class="article">
-
-              <div class="article-container">
-                <h3>Banners</h3>
-              </div>
-
-              <div class="article-container article-centered article-vmargin">
-
-                <div class="container article-column">
-
-                  <div class="article-shrink article-centered">
-                    <button class="btn article-vmargin">+ add new</button>
-                  </div>
-
-                  <div class="article-shrink article-centered article-column">
-
-                    <div class="container-links">
-                      <p class="links-line">Banner main</p>
-                      <a href="#" class="links-line">http://www.website.com/main</a>
-                      <div class="container links-icons">
-                        <i class="icon-links"></i>
-                        <i class="icon-trash"></i>
-                      </div>
-                    </div>
-
-                    <div class="container-links">
-                      <p class="links-line">Sign-up banner</p>
-                      <a href="#" class="links-line">http://www.website.com/signup</a>
-                      <div class="container links-icons">
-                        <i class="icon-links"></i>
-                        <i class="icon-trash"></i>
-                      </div>
-                    </div>
-
-                    <div class="container-links">
-                      <p class="links-line">Left side</p>
-                      <a href="#" class="links-line">http://www.website.com/left</a>
-                      <div class="container links-icons">
-                        <i class="icon-links"></i>
-                        <i class="icon-trash"></i>
-                      </div>
-                    </div>
-
-                    <div class="container-links">
-                      <p class="links-line">Vertical</p>
-                      <a href="#" class="links-line">http://www.website.com/vertical</a>
-                      <div class="container links-icons">
-                        <i class="icon-links"></i>
-                        <i class="icon-trash"></i>
-                      </div>
-                    </div>
-
-                    <div class="container-links article-centered">
-                      <p class="links-line">Front</p>
-                      <a href="#" class="links-line">http://www.website.com/front</a>
-                      <div class="container links-icons">
-                        <i class="icon-links"></i>
-                        <i class="icon-trash"></i>
-                      </div>
-                    </div>
-
-                    <div class="container-links article-centered">
-                      <p class="links-line">Horizontal</p>
-                      <a href="#" class="links-line">http://www.website.com/horizontal</a>
-                      <div class="container links-icons">
-                        <i class="icon-links"></i>
-                        <i class="icon-trash"></i>
-                      </div>
-                    </div>
-
-                  </div>
-
-                  <div class="article-shrink article-centered">
-                    <button class="btn article-vmargin">+ add new</button>
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div> <!-- end Article -->
-
-
-            <div class="article">
+            <div class="article active" id="Banners">
 
               <div class="article-container">
                 <h3>Banners</h3>
@@ -400,65 +317,67 @@
                   <button class="btn article-vmargin">+ add new</button>
                 </div>
 
-                <table class="centered">
+                <div class="row article-centered">
+                  <table class="mwidth-700  mar-hor20">
+                    <tbody class="">
+                    <tr>
+                      <td><span>Banner main</span></td>
+                      <td><a href="#" class="links-line">http://www.website.com/main</a></td>
+                      <td>
+                        <i class="icon-links"></i>
+                        <i class="icon-trash"></i>
+                      </td>
+                    </tr>
 
-                  <tr>
-                    <td><span>Banner main</span></td>
-                    <td><a href="#" class="links-line">http://www.website.com/main</a></td>
-                    <td>
-                      <input type="checkbox" name="showicons">
-                      <label for="showicons">Modify</label>
-                      <i class="icon-links"></i>
-                      <i class="icon-trash"></i>
-                    </td>
-                  </tr>
+                    <tr>
+                      <td><span>Sign-up banner</span></td>
+                      <td><a href="#" class="links-line">http://www.website.com/signup</a></td>
+                      <td>
+                        <i class="icon-links"></i>
+                        <i class="icon-trash"></i>
+                      </td>
+                    </tr>
 
-                  <tr>
-                    <td><span>Sign-up banner</span></td>
-                    <td><a href="#" class="links-line">http://www.website.com/signup</a></td>
-                    <td>
-                      <i class="icon-links"></i>
-                      <i class="icon-trash"></i>
-                    </td>
-                  </tr>
+                    <tr>
+                      <td><span>Left side</span></td>
+                      <td><a href="#" class="links-line">http://www.website.com/left</a></td>
+                      <td>
+                        <i class="icon-links"></i>
+                        <i class="icon-trash"></i>
+                      </td>
+                    </tr>
 
-                  <tr>
-                    <td><span>Left side</span></td>
-                    <td><a href="#" class="links-line">http://www.website.com/left</a></td>
-                    <td>
-                      <i class="icon-links"></i>
-                      <i class="icon-trash"></i>
-                    </td>
-                  </tr>
+                    <tr>
+                      <td><span>Vertical</span></td>
+                      <td><a href="#" class="links-line">http://www.website.com/vertical</a></td>
+                      <td>
+                        <i class="icon-links"></i>
+                        <i class="icon-trash"></i>
+                      </td>
+                    </tr>
 
-                  <tr>
-                    <td><span>Vertical</span></td>
-                    <td><a href="#" class="links-line">http://www.website.com/vertical</a></td>
-                    <td>
-                      <i class="icon-links"></i>
-                      <i class="icon-trash"></i>
-                    </td>
-                  </tr>
+                    <tr>
+                      <td><span>Front</span></td>
+                      <td><a href="#" class="links-line">http://www.website.com/front</a></td>
+                      <td>
+                        <i class="icon-links"></i>
+                        <i class="icon-trash"></i>
+                      </td>
+                    </tr>
 
-                  <tr>
-                    <td><span>Front</span></td>
-                    <td><a href="#" class="links-line">http://www.website.com/front</a></td>
-                    <td>
-                      <i class="icon-links"></i>
-                      <i class="icon-trash"></i>
-                    </td>
-                  </tr>
+                    <tr>
+                      <td><span>Horizontal</span></td>
+                      <td><a href="#" class="links-line">http://www.website.com/horizontal</a></td>
+                      <td>
+                        <i class="icon-links"></i>
+                        <i class="icon-trash"></i>
+                      </td>
+                    </tr>
+                  </tbody>
+                  </table>
+                </div>
 
-                  <tr>
-                    <td><span>Horizontal</span></td>
-                    <td><a href="#" class="links-line">http://www.website.com/horizontal</a></td>
-                    <td>
-                      <i class="icon-links"></i>
-                      <i class="icon-trash"></i>
-                    </td>
-                  </tr>
 
-                </table>
 
                 <div class="row article-centered">
                   <button class="btn article-vmargin">+ add new</button>
@@ -475,13 +394,21 @@
 
 
             <div class="overlay" id="overlay">
-              <div class="modal" id="myModal">
+              <div class="modal d-flex" id="myModal">
                 <div class="btn-close js--close-modal">x</div>
 
-                <h4>Witaj w modalu!</h4>
-                <p>Lorem ipsum dolor sit amet...</p>
+                <div class="border-bottom d-flex container pad-disable">
+                  <span class="v-margin30 pad-hor20">Do you really want to quit?</span>
+                </div>
 
-                <button class="js--close-modal">Okay</button>
+                <div class="d-flex flex-spacearound container pad-disable">
+                  <button class="btn js--close-modal v-margin30 mar-hor20 secondary">Keep Working</button>
+                  <button class="btn danger js--close-modal v-margin30 mar-hor20">Quit</button>
+                </div>
+
+
+
+
               </div>
             </div>
 

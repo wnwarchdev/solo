@@ -1,6 +1,3 @@
-
-@import "../variables";
-
 .main-topbar {
   position: fixed;
   z-index: 20;
@@ -38,19 +35,6 @@
 
 .drop-small {
   width: 60px;
-}
-
-
-.font-regular {
-  font-weight: $font-regular;
-}
-
-.font-bold {
-  font-weight: $font-bold;
-}
-
-.font-light {
-  font-weight: $font-light;
 }
 
 @media(max-width: 767px) {

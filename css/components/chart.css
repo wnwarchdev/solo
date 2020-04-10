@@ -1,0 +1,11 @@
+.chart_height {
+  height: 380px;
+}
+
+@media (max-width: 500px) {
+  .chart_height {
+    max-height: 210px;
+  }
+}
+
+/*# sourceMappingURL=chart.css.map */
