@@ -49,6 +49,11 @@ document.querySelector('.testmodal').addEventListener('click', function(e) {
   openModal('#myModal')
 });
 
+document.querySelector('.profile').addEventListener('click', function(e) {
+  e.preventDefault();
+  openModal('#profile')
+});
+
 
 
 //Chart
@@ -117,6 +122,37 @@ let chart = new Chart(ctx, {
     },
 
 });
+
+
+
+
+//func
+const titleClickHandler = function(){
+  const clickedElement = this;
+  event.preventDefault();
+
+  const activeArticles = document.querySelectorAll('.article');
+
+  for(let activeArticle of activeArticles){
+    activeArticle.classList.remove('active');
+  }
+
+const reference= clickedElement.getAttribute('data-href');
+
+
+const refArticle = document.getElementById(reference);
+refArticle.classList.add('active');
+
+} // end func
+
+
+//handler
+const links = document.querySelectorAll('.nav-navpanel-list-item');
+
+for(let link of links){
+  link.addEventListener('click', titleClickHandler);
+} // end handler
+
 
 
 // title

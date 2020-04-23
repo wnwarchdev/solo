@@ -30,38 +30,38 @@
 
       <div class="nav-navpanel">
          <ul class="nav-navpanel-list">
-           <li class="nav-navpanel-list-item">
-             <a href="#General"><i class="icon-general"></i><span>General</span></a>
+           <li class="nav-navpanel-list-item" data-href="General">
+             <a><i class="icon-general"></i><span>General</span></a> <!--czy to jeszcze jest link?-->
            </li>
-           <li class="nav-navpanel-list-item">
-             <a href="#Details"><i class="icon-details"></i><span>Details</span></a>
+           <li class="nav-navpanel-list-item" data-href="Details">
+             <a><i class="icon-details"></i><span>Details</span></a>
            </li>
-           <li class="nav-navpanel-list-item">
-             <a href="#Links"><i class="icon-links"></i><span>Links</span></a>
+           <li class="nav-navpanel-list-item" data-href="Links">
+             <a><i class="icon-links"></i><span>Links</span></a>
            </li>
-           <li class="nav-navpanel-list-item">
-             <a href="#Banners"><i class="icon-banners"></i><span>Banners</span></a>
+           <li class="nav-navpanel-list-item" data-href="Banners">
+             <a><i class="icon-banners"></i><span>Banners</span></a>
            </li>
-           <li class="nav-navpanel-list-item">
-             <a href="#Personal-data"><i class="icon-personaldata"></i><span>Personal Data</span></a>
+           <li class="nav-navpanel-list-item" data-href="Personal-data">
+             <a><i class="icon-personaldata"></i><span>Personal Data</span></a>
            </li>
-           <li class="nav-navpanel-list-item">
-             <a href="#Payout"><i class="icon-payout"></i><span>Payout</span></a>
+           <li class="nav-navpanel-list-item" data-href="Payout">
+             <a><i class="icon-payout"></i><span>Payout</span></a>
            </li>
-           <li class="nav-navpanel-list-item">
-             <a href="#Postback"><i class="icon-postback"></i><span>Postback</span></a>
+           <li class="nav-navpanel-list-item" data-href="Postback">
+             <a><i class="icon-postback"></i><span>Postback</span></a>
            </li>
-           <li class="nav-navpanel-list-item nav-hide">
-             <a href="#Postback"><i class="icon-wallet"></i><span>Funds</span></a>
+           <li class="nav-navpanel-list-item nav-hide" data-href="Funds">
+             <a><i class="icon-wallet"></i><span>Funds</span></a>
            </li>
-           <li class="nav-navpanel-list-item nav-hide">
-             <a href="#Postback"><i class="icon-notification"></i><span>Notifications</span></a>
+           <li class="nav-navpanel-list-item nav-hide" data-href="Notifications">
+             <a><i class="icon-notification"></i><span>Notifications</span></a>
            </li>
-           <li class="nav-navpanel-list-item nav-hide">
-             <a href="#Postback"><i class="icon-quit"></i><span>Exit</span></a>
+           <li class="nav-navpanel-list-item nav-hide" data-href="Quit"  id="quit">
+             <a><i class="icon-quit"></i><span>Exit</span></a>
            </li>
-           <li class="nav-navpanel-list-item nav-hide">
-             <a href="#" class="name-link"><i class="icon-profile"></i><span>Leonardo DiCaprio</span></a>
+           <li class="nav-navpanel-list-item nav-hide" data-href="Profile">
+             <a class="name-link"><i class="icon-profile"></i><span>Leonardo DiCaprio</span></a>
            </li>
          </ul>
       </div>
@@ -92,12 +92,12 @@
           <i class="icon-notification"></i>
         </div>
 
-        <div class="dropdown drop-large">
+        <div class="dropdown drop-large profile">
           <i class="icon-profile"></i>
           <a href="#" class="name-link">Leonardo DiCaprio</a>
         </div>
 
-        <div class="dropdown drop-small">
+        <div class="dropdown drop-small" id="quit">
           <i class="icon-quit"></i>
         </div>
       </div>
@@ -185,8 +185,19 @@
 
             </div>
 
+            <div class="article" id="Details">
+              <div class="article-container">
+                <h3>Details</h3>
+              </div>
+              <div class="article-container article-centered">
+                <div class="row">
+                  <button class="btn article-vmargin">+ add new</button>
+                </div>
+              </div>
+            </div> <!-- end Article -->
 
-            <div class="article active" id="Links">
+
+            <div class="article" id="Links">
 
               <div class="article-container">
                 <h3>Links</h3>
@@ -305,7 +316,7 @@
             </div> <!-- end Article -->
 
 
-            <div class="article active" id="Banners">
+            <div class="article" id="Banners">
 
               <div class="article-container">
                 <h3>Banners</h3>
@@ -393,8 +404,48 @@
 
 
 
+            <div class="article" id="Personal-data">
+              <div class="article-container">
+                <h3>Personal Data</h3>
+              </div>
+              <div class="article-container article-centered">
+                <div class="row">
+                  <button class="btn article-vmargin">+ add new</button>
+                </div>
+              </div>
+            </div> <!-- end Article -->
+
+            <div class="article" id="Payout">
+              <div class="article-container">
+                <h3>Payout</h3>
+              </div>
+              <div class="article-container article-centered">
+                <div class="row">
+                  <button class="btn article-vmargin">+ add new</button>
+                </div>
+              </div>
+            </div> <!-- end Article -->
+
+            <div class="article" id="Postback">
+              <div class="article-container">
+                <h3>Postback</h3>
+              </div>
+              <div class="article-container article-centered">
+                <div class="row">
+                  <button class="btn article-vmargin">+ add new</button>
+                </div>
+              </div>
+            </div> <!-- end Article -->
+
+
+
+
+
+
             <div class="overlay" id="overlay">
+
               <div class="modal d-flex" id="myModal">
+
                 <div class="btn-close js--close-modal">x</div>
 
                 <div class="border-bottom d-flex container pad-disable">
@@ -406,10 +457,26 @@
                   <button class="btn danger js--close-modal v-margin30 mar-hor20">Quit</button>
                 </div>
 
+              </div>
 
+              <div class="modal d-flex" id="profile">
 
+                <div class="btn-close js--close-modal">x</div>
+
+                <div class="border-bottom d-flex container pad-disable">
+                  <span class="v-margin30 pad-hor20">Profile</span>
+                </div>
+
+                <div class="d-flex flex-spacearound container pad-disable">
+                  <button class="btn js--close-modal v-margin30 mar-hor20 ">Save and quit</button>
+                  <button class="btn secondary js--close-modal v-margin30 mar-hor20">Cancel</button>
+                </div>
 
               </div>
+
+
+
+
             </div>
 
 

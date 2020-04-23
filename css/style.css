@@ -932,12 +932,23 @@ main {
   padding-top: 60px;
 }
 
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
 .article {
   background-color: #ffffff;
   box-shadow: 0 0 5px 2px #e3e3e3;
   margin: 20px;
   width: calc(100% - 40px);
   padding-bottom: 35px;
+  animation: appear;
+  animation-duration: .3s;
 }
 
 .article:not(.active) {
